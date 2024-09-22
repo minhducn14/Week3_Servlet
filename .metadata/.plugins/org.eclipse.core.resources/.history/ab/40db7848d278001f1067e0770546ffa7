@@ -1,0 +1,34 @@
+package daoImpl;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import dao.ProductDAO;
+import modal.Product;
+
+public class ProductDaoImpl implements ProductDAO {
+
+	private DataSource datasource;
+
+	@Override
+	public List<Product> findAll() {
+		// TODO Auto-generated method stub
+		String sql = "SELECT * FROM product";
+		return null;
+
+	}
+
+	@Override
+	public Product getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addProduct(Product p) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

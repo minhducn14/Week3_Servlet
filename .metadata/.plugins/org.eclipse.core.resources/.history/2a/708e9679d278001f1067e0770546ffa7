@@ -1,0 +1,53 @@
+package daoImpl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import dao.ProductDAO;
+import modal.Product;
+
+public class ProductDaoImpl implements ProductDAO {
+
+	private DataSource datasource;
+
+	@Override
+	public List<Product> findAll() {
+		// TODO Auto-generated method stub
+		String sql = "SELECT * FROM product";
+		ArrayList<Product> list = new ArrayList<Product>();
+		try (Connection con = this.datasource.getConnection();
+				PreparedStatement ps = (PreparedStatement) con.prepareStatement(sql);
+				ResultSet rs = ps.executeQuery();) {
+			while (rs.next()) {
+				int id = rs.getInt("id");
+				String name = rs.getString("name");
+				Double price = rs.getDouble("price");
+				String image = rs.getString("image");
+				list.add(new Product(id, name, price, image));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+
+	}
+
+	@Override
+	public Product getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addProduct(Product p) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

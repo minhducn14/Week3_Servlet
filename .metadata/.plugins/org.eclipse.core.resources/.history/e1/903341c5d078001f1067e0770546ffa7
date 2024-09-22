@@ -1,0 +1,39 @@
+package modal;
+
+public class ProductList {
+	 private static List<Product> productList = new ArrayList<>();
+
+	    static {
+	        // Khởi tạo một số sản phẩm mẫu
+	        productList.add(new Product(1, "iPhone 13", 999.99));
+	        productList.add(new Product(2, "Samsung Galaxy S21", 799.99));
+	        productList.add(new Product(3, "Google Pixel 6", 699.99));
+	        productList.add(new Product(4, "Sony Xperia 5", 899.99));
+	        productList.add(new Product(5, "OnePlus 9", 729.99));
+	    }
+
+	    // Phương thức lấy toàn bộ danh sách sản phẩm
+	    public static List<Product> getAllProducts() {
+	        return productList;
+	    }
+
+	    // Phương thức tìm sản phẩm theo ID
+	    public static Product getProductById(int id) {
+	        for (Product product : productList) {
+	            if (product.getId() == id) {
+	                return product;
+	            }
+	        }
+	        return null; // Nếu không tìm thấy sản phẩm nào có ID như vậy
+	    }
+
+	    // Phương thức thêm sản phẩm vào danh sách
+	    public static void addProduct(Product product) {
+	        productList.add(product);
+	    }
+
+	    // Phương thức xóa sản phẩm khỏi danh sách
+	    public static void removeProduct(int id) {
+	        productList.removeIf(product -> product.getId() == id);
+	    }
+}
