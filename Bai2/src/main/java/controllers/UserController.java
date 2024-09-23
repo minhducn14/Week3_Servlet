@@ -13,9 +13,9 @@ import java.util.Date;
 import jakarta.annotation.Resource;
 import javax.sql.DataSource;
 
-import Entities.Gender;
-import Entities.User;
 import daoImpl.UserDAOImpl;
+import entities.Gender;
+import entities.User;
 
 /**
  * Servlet implementation class UserController

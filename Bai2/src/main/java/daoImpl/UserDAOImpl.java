@@ -9,8 +9,8 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import Entities.User;
 import dao.UserDAO;
+import entities.User;
 
 public class UserDAOImpl implements UserDAO {
 	private DataSource datasource;

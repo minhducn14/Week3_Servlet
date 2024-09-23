@@ -1,8 +1,0 @@
-package modal;
-
-import java.util.ArrayList;
-
-public class CartBean {
-    private List<Car> items = new ArrayList<>();
-
-}

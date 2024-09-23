@@ -142,9 +142,9 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="E:\HK7\WWW\BTTuan3\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\HK7\WWW\BTTuan3\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Bai2" path="/Bai2" reloadable="true" source="org.eclipse.jst.jee.server:Bai2">
-	<Resource URIEncoding="UTF-8" auth="Container" driverClassName="org.mariadb.jdbc.Driver" maxActive="50" maxIdle="30" maxWait="10000" name="jdbc/shopping" password="root" type="javax.sql.DataSource" url="jdbc:mariadb://localhost:3306/shopping" username="root"/>
-</Context><Context docBase="E:\HK7\WWW\BTTuan3\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Bai3" path="/Bai3" reloadable="true" source="org.eclipse.jst.jee.server:Bai3"/><Context docBase="E:\HK7\WWW\BTTuan3\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Bai4" path="/Bai4" reloadable="true" source="org.eclipse.jst.jee.server:Bai4">
+      <Context docBase="C:\Users\my\Desktop\New folder\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\my\Desktop\New folder\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Bai2" path="/Bai2" reloadable="true" source="org.eclipse.jst.jee.server:Bai2">
+	<Resource URIEncoding="UTF-8" auth="Container" driverClassName="org.mariadb.jdbc.Driver" maxActive="50" maxIdle="30" maxWait="10000" name="jdbc/MariaDB" password="root" type="javax.sql.DataSource" url="jdbc:mariadb://localhost:3306/bai2lab3" username="root"/>
+</Context><Context docBase="C:\Users\my\Desktop\New folder\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Bai4" path="/Bai4" reloadable="true" source="org.eclipse.jst.jee.server:Bai4">
     <Resource URIEncoding="UTF-8" auth="Container" driverClassName="org.mariadb.jdbc.Driver" maxActive="50" maxIdle="30" maxWait="10000" name="jdbc/shopping" password="root" type="javax.sql.DataSource" url="jdbc:mariadb://localhost:3306/shopping" username="root"/>
 </Context></Host>
     </Engine>

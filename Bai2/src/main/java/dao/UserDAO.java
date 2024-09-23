@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import Entities.User;
+import entities.User;
 
 public interface UserDAO {
 	public List<User> getAllUsers();

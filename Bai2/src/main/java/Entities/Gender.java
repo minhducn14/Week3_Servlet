@@ -1,4 +1,4 @@
-package Entities;
+package entities;
 
 public enum Gender {
 	FEMALE("Female"), MALE("Male");
