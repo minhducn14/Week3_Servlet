@@ -1,6 +1,0 @@
-dao\UserDAO.class
-Entities\Gender.class
-controllers\UserController.class
-Entities\User.class
-daoImpl\UserDAOImpl.class
-connection\DBConnection.class
